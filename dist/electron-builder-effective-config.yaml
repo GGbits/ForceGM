@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: assets
+appId: com.forcegm
+files:
+  - build/**/*
+  - node_modules/**/*
+  - package.json
+extends: null
+extraMetadata:
+  main: build/main.js
+electronVersion: 2.0.0
