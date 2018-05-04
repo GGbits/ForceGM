@@ -21,8 +21,14 @@ export class HealthTracker extends React.Component {
   render() {
     return (
       <div>
-        <input type="number" name={this.props.title} value={this.state.healthvalue} min="0" onChange={this.handleHealthChange} />
-        <p>{this.props.threshold}</p>
+        <div>
+          <input type="number" name={this.props.title} value={this.state.healthvalue} min="0" onChange={this.handleHealthChange} />
+          <p>Current</p>
+        </div>
+        <div>
+          <input type="number" name={this.props.title + "_threshold"} value={this.props.threshold} disabled="true" />
+          <p>Threshold</p>
+        </div>
       </div>
     )
   }
